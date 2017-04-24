@@ -117,7 +117,7 @@ def sequence_item(request, user_module_id, position):
     user_module.recompute_grade()
 
     # don't try grade passback if previewing as student in studio
-    if user_module.ltiparameters.lis_sourcedid:
+    if user_module.ltiparameters.lis_person_sourcedid:
         user_module.grade_passback()
 
     context = {
