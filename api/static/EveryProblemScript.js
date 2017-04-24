@@ -34,7 +34,12 @@ $(document).ready(function(){
         }
 
         // Get username after button press, since analytics variable not available right away at document.ready
-        var username = analytics._user._getTraits()['username'];
+        try {
+            var username = analytics._user._getTraits()['username'];
+        }
+        catch(err) {
+            var username = 'No_username_found';
+        }
         
         //Log info: edX username, problem ID, current and maximum grade.
         console.log('User: ' + username);
