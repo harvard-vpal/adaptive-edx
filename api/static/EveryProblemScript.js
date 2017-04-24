@@ -48,7 +48,7 @@ $(document).ready(function(){
         console.log('Max grade: ' + maxGradeNumber);
 
         // Make POST request with grade info
-        $.post("https://adaptive-edx.vpal.io/api/problem_attempt", {
+        $.post("https://adaptive-edx-v4.vpal.io/api/problem_attempt", {
                 user: username,
                 problem: problemID,
                 points: gradeNumber,
