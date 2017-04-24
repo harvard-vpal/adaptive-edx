@@ -1,5 +1,5 @@
-
-# os.environ.setdefault('ENV_TYPE', 'development')
+import os
+os.environ.setdefault('ENV_TYPE', 'production')
 from .base import *
 import secure
 
