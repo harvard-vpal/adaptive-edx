@@ -564,7 +564,7 @@
     "fields": {
       "name": "Long Range", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@a6b9f55c06894bf98f0c39408c8ce2e2", 
-      "module": 1, 
+      "module": 22, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -577,7 +577,7 @@
     "fields": {
       "name": "Travel Time to Proxima Centauri", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@f060ebcaf8bc4ab787c0c5546197b9d6", 
-      "module": 1, 
+      "module": 22, 
       "visible": false, 
       "max_points": 0.0, 
       "type": "problem", 
@@ -590,7 +590,7 @@
     "fields": {
       "name": "Long Range", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@f1f9565c70ab4b96aad343f28243c819", 
-      "module": 1, 
+      "module": 22, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -775,7 +775,7 @@
     "fields": {
       "name": "Gas Giants", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@7da1a23f3d7d4e5bb46d77a473f0668f", 
-      "module": 2, 
+      "module": 23, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -788,7 +788,7 @@
     "fields": {
       "name": "Mass Ranking", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@2772d8e000ea4336b803956dcd3346b0", 
-      "module": 2, 
+      "module": 23, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -801,7 +801,7 @@
     "fields": {
       "name": "Gas Giants", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@5194de2180a14a5eb7647b95454c8374", 
-      "module": 2, 
+      "module": 23, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -814,7 +814,7 @@
     "fields": {
       "name": "Mass Ranking", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@efba31f610ee411d8f285de19e841787", 
-      "module": 2, 
+      "module": 23, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1138,7 +1138,7 @@
     "fields": {
       "name": "Venus", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@8dbbc62ecc99433690380e70fedd1ffc", 
-      "module": 3, 
+      "module": 24, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1151,7 +1151,7 @@
     "fields": {
       "name": "Mars", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@001ce619b8a24c9fb78ace8abe0bf5bc", 
-      "module": 3, 
+      "module": 24, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1164,7 +1164,7 @@
     "fields": {
       "name": "Venus", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@7d27af62183a4c0db44610b11828450b", 
-      "module": 3, 
+      "module": 24, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1177,7 +1177,7 @@
     "fields": {
       "name": "Mars", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@daed7629e6ca40ccb86aa5d1d638a80d", 
-      "module": 3, 
+      "module": 24, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1352,7 +1352,7 @@
     "fields": {
       "name": "Hazardous Conditions", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@8db7bbe8c49e4ee3a45b38073d5ce7fd", 
-      "module": 4, 
+      "module": 25, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1365,7 +1365,7 @@
     "fields": {
       "name": "Earth versus Mars", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@bce252e118d64658a987d204b7b859a9", 
-      "module": 4, 
+      "module": 25, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1378,7 +1378,7 @@
     "fields": {
       "name": "Hazardous Conditions", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@cec0112c1b3b4b29b850130854214d48", 
-      "module": 4, 
+      "module": 25, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 
@@ -1391,7 +1391,7 @@
     "fields": {
       "name": "Earth versus Mars", 
       "url": "https://courses.edx.org/xblock/block-v1:HarvardX+SPU30x+2T2017+type@problem+block@506fa3b419f249d2ac822143157e021c", 
-      "module": 4, 
+      "module": 25, 
       "visible": false, 
       "max_points": 1.0, 
       "type": "problem", 

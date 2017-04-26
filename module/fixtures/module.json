@@ -166,5 +166,37 @@
       "max_points": null, 
       "name": "Post-Course Survey"
     }
+  },
+  {
+    "pk": 22, 
+    "model": "module.module", 
+    "fields": {
+      "max_points": null, 
+      "name": "How do we find exoplanets? (content experiment)"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "module.module", 
+    "fields": {
+      "max_points": null, 
+      "name": "How do we learn about exoplanets? (content experiment)"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "module.module", 
+    "fields": {
+      "max_points": null, 
+      "name": "What Makes a Planet Habitable? (content experiment)"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "module.module", 
+    "fields": {
+      "max_points": null, 
+      "name": "What Makes Super-Earths Favorable for Life? (content experiment)"
+    }
   }
 ]
