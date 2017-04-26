@@ -8,7 +8,7 @@ $(document).ready(function(){
         event.preventDefault();
         next_button.addClass('disabled');
         next_button.text('Loading...');
-        setTimeout(afterTimeout, 2000);
+        setTimeout(afterTimeout, 3000);
     });
 
     // after timeout, follow the next activity link
