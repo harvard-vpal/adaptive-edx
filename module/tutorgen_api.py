@@ -1,6 +1,6 @@
 import requests
 from requests.auth import HTTPBasicAuth
-# from django.conf import settings
+from django.conf import settings
 
 auth = HTTPBasicAuth(settings.TUTORGEN_USER,settings.TUTORGEN_PASS)
 
