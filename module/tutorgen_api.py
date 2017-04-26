@@ -1,48 +1,32 @@
 import requests
 from requests.auth import HTTPBasicAuth
-from django.conf import settings
+# from django.conf import settings
 
 auth = HTTPBasicAuth(settings.TUTORGEN_USER,settings.TUTORGEN_PASS)
 
 class Transaction:
     def __init__(self, attempt):
-        # datestamp has format "13 September 2016"
-        datestamp = "{day} {month} {year}".format(
-            day = attempt.timestamp.day,
-            month = attempt.timestamp.strftime('%B'),
-            year = attempt.timestamp.year,
-        )
-        # timestamp has format 21:01
-        timestamp = "{hour}:{minute}".format(
-            hour = attempt.timestamp.hour,
-            minute = attempt.timestamp.minute,
-        )
-        # determine correctness
-        problem_result = 'correct' if attempt.points==attempt.max_points else 'incorrect'
+        
         # construct the post request data
         json = {
-            'course_id': settings.TUTORGEN_COURSE_ID,
-            'datestamp': datestamp,
-            'problem_id': attempt.activity.pk,
-            'problem_result': problem_result,
-            'learner_id': attempt.user.pk,
-            'timestamp': timestamp,
+            'learner': attempt.user.pk,
+            'problem': attempt.activity.pk,
+            'result': attempt.points==attempt.max_points,
         }
 
         # send the post request
-        r = requests.post("{}/transaction".format(settings.TUTORGEN_URL_BASE),
+        self.response = requests.post("{}/transactions/".format(settings.TUTORGEN_URL_BASE),
             auth=auth,
             json=json,
         )
-        self.response = r.json()
+        self.response_data = self.response.json()
         print "TUTORGEN POST TRANSACTION: sent: {}".format(json)
 
     def success(self):
         '''
         Returns True if the transaction was successfully created for tutorgen
         '''
-        if self.response['status'] == 201:
-            return True
+        return self.response.status_code == 201
 
 
 class Activity:
@@ -50,39 +34,38 @@ class Activity:
         '''
         Get a recommendation for new activity
         methods used for getting activity_id and whether student is done with module
+        #TODO adjust for post
         '''
-        params = {
-            'learner_id': user_module.user.pk,
-            'section': user_module.module.pk,
-            # 'subsection': subsection,
-            # 'unit': unit
+        content_groups = {
+            1: "Module 1",
+            2: "Module 2",
+            3: "Module 3",
+            4: "Module 4",
         }
-        r = requests.get(
-            "{}/activity".format(settings.TUTORGEN_URL_BASE),
+        json = {
+            'learner': user_module.user.pk,
+            'cg1': content_groups[user_module.module.pk],
+        }
+        self.response = requests.post(
+            "{}/activities/".format(settings.TUTORGEN_URL_BASE),
             auth=auth,
-            params=params,
+            json=json,
         )
-        self.response = r.json()
-        print "TUTORGEN: GET ACTIVITY, sent: {}, received: {}".format(params,self.response)
-        result = self.response['_embedded']['item']
-        if len(result)==1:
-            self.activity_info = result[0]
-        elif len(result)==0:
-            print 
-            self.activity_info = None
-        elif len(result)>1:
-            print "TUTORGEN: ERROR more than one item returned in get activity request"
+        self.response_data = self.response.json()
+        print "TUTORGEN: GET ACTIVITY, sent: {}, received: {}".format(json,self.response_data)
 
     def get_activity_id(self):
-        if self.activity_info:
-            return self.activity_info['next_activity']
+        if type(self.response_data) == dict:
+            activity_id = self.response_data.get('next_activity',None)
+            if activity_id: activity_id = int(activity_id)
+            return activity_id
         else:
             return None
 
     def level_up(self):
-        if self.activity_info:
-            return self.activity_info['level_up']=='true'
+        if type(self.response_data) == dict:
+            return self.response_data.get('level_up', False)
+        elif self.response.status_code == 400:
+            return True
         else:
             return False
-
-
