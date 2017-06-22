@@ -21,6 +21,8 @@ class Module(models.Model):
     name = models.CharField(max_length=200)
     # full credit threshold for module
     max_points = models.FloatField(null=True)
+    # content grouping id, corresponds to ls_cg_id in Tutorgen SCALE
+    label = models.CharField(max_length=200, default='')
 
     def __unicode__(self):
         return "{}: {}".format(self.pk, self.name)
