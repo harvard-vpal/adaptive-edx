@@ -36,15 +36,9 @@ class Activity:
         methods used for getting activity_id and whether student is done with module
         #TODO adjust for post
         '''
-        content_groups = {
-            1: "Module 1",
-            2: "Module 2",
-            3: "Module 3",
-            4: "Module 4",
-        }
         json = {
             'learner': user_module.user.pk,
-            'cg1': content_groups[user_module.module.pk],
+            'cg1': user_module.module.label,
         }
         self.response = requests.post(
             "{}/activities/".format(settings.TUTORGEN_URL_BASE),

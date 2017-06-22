@@ -4,7 +4,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": 25.0, 
-      "name": "How do we find exoplanets?"
+      "name": "How do we find exoplanets?",
+      "label": "Module 1"
     }
   }, 
   {
@@ -12,7 +13,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": 30.0, 
-      "name": "How do we learn about exoplanets?"
+      "name": "How do we learn about exoplanets?",
+      "label": "Module 2"
     }
   }, 
   {
@@ -20,7 +22,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": 15.0, 
-      "name": "What Makes a Planet Habitable?"
+      "name": "What Makes a Planet Habitable?",
+      "label": "Module 3"
     }
   }, 
   {
@@ -28,7 +31,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": 15.0, 
-      "name": "What Makes Super-Earths Favorable for Life?"
+      "name": "What Makes Super-Earths Favorable for Life?",
+      "label": "Module 4"
     }
   }, 
   {
@@ -36,7 +40,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How To Do edX Homework"
+      "name": "How To Do edX Homework",
+      "label": "Module 5"
     }
   }, 
   {
@@ -44,7 +49,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "Syllabus Quiz"
+      "name": "Syllabus Quiz",
+      "label": "Module 6"
     }
   }, 
   {
@@ -52,7 +58,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What is Life?"
+      "name": "What is Life?",
+      "label": "Module 7"
     }
   }, 
   {
@@ -60,7 +67,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What Does Life Need?"
+      "name": "What Does Life Need?",
+      "label": "Module 8"
     }
   }, 
   {
@@ -68,7 +76,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What is Evolution?"
+      "name": "What is Evolution?",
+      "label": "Module 9"
     }
   }, 
   {
@@ -76,7 +85,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How did Life Arise?"
+      "name": "How did Life Arise?",
+      "label": "Module 10"
     }
   }, 
   {
@@ -84,7 +94,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What is a Planet?"
+      "name": "What is a Planet?",
+      "label": "Module 11"
     }
   }, 
   {
@@ -92,7 +103,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What are Super-Earths?"
+      "name": "What are Super-Earths?",
+      "label": "Module 12"
     }
   }, 
   {
@@ -100,7 +112,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "Mid-Course Recap"
+      "name": "Mid-Course Recap",
+      "label": "Module 13"
     }
   }, 
   {
@@ -108,7 +121,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "The Co-Evolution of Planets and Life"
+      "name": "The Co-Evolution of Planets and Life",
+      "label": "Module 14"
     }
   }, 
   {
@@ -116,7 +130,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How Many Habitable Planets Are There?"
+      "name": "How Many Habitable Planets Are There?",
+      "label": "Module 15"
     }
   }, 
   {
@@ -124,7 +139,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How Could We Find Unintelligent Life?"
+      "name": "How Could We Find Unintelligent Life?",
+      "label": "Module 16"
     }
   }, 
   {
@@ -132,7 +148,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How Could We Find Intelligent Life?"
+      "name": "How Could We Find Intelligent Life?",
+      "label": "Module 17"
     }
   }, 
   {
@@ -140,7 +157,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How Hard Is It To Detect?"
+      "name": "How Hard Is It To Detect?",
+      "label": "Module 18"
     }
   }, 
   {
@@ -148,7 +166,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "Course Review"
+      "name": "Course Review",
+      "label": "Module 19"
     }
   }, 
   {
@@ -156,7 +175,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "Important Pre-Course Survey"
+      "name": "Important Pre-Course Survey",
+      "label": "Module 20"
     }
   }, 
   {
@@ -164,7 +184,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "Post-Course Survey"
+      "name": "Post-Course Survey",
+      "label": "Module 21"
     }
   },
   {
@@ -172,7 +193,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How do we find exoplanets? (content experiment)"
+      "name": "How do we find exoplanets? (content experiment)",
+      "label": "Module 22"
     }
   }, 
   {
@@ -180,7 +202,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "How do we learn about exoplanets? (content experiment)"
+      "name": "How do we learn about exoplanets? (content experiment)",
+      "label": "Module 23"
     }
   }, 
   {
@@ -188,7 +211,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What Makes a Planet Habitable? (content experiment)"
+      "name": "What Makes a Planet Habitable? (content experiment)",
+      "label": "Module 24"
     }
   }, 
   {
@@ -196,7 +220,8 @@
     "model": "module.module", 
     "fields": {
       "max_points": null, 
-      "name": "What Makes Super-Earths Favorable for Life? (content experiment)"
+      "name": "What Makes Super-Earths Favorable for Life? (content experiment)",
+      "label": "Module 25"
     }
   }
 ]
