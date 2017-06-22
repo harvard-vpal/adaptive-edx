@@ -24,4 +24,6 @@ http_static/
 # !.elasticbeanstalk/*.cfg.yml
 # !.elasticbeanstalk/*.global.yml
 
-
+## Fixtures
+# /module/fixtures/activity_qmb.json
+# /module/fixtures/module_qmb.json
