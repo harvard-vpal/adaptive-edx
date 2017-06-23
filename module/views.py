@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.conf import settings
 from .models import *
 import random
@@ -35,6 +35,9 @@ def launch(request, user_module_id):
     # first time someone sees the module or any problems from it
     else:
         activity = utils.get_first_activity(user_module)
+        if not activity:
+            raise Http404("No activity found for this module")
+
         last_position = 1
         sequence_item = SequenceItem(
             user_module = user_module,
