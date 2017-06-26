@@ -33,7 +33,7 @@ def problem_attempt(request):
             'success':False,
             'message': 'username not given',
         })
-    user, created = User.objects.get_or_create(username='cuid:'+user_id)
+    user, created = User.objects.get_or_create(username='cuid:'+user_id[:25])
 
     # max_points may not be passed if question is ungraded, in which case it is set to 0
     # have also seen instance where non-number string was passed
