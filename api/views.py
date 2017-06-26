@@ -27,13 +27,13 @@ def problem_attempt(request):
         })
 
     # get or create the user by the edx username
-    username = request.POST.get('user','')
+    user_id = request.POST.get('user')
     if not username:
         return JsonResponse({
             'success':False,
             'message': 'username not given',
         })
-    user, created = User.objects.get_or_create(username=request.POST['user'])
+    user, created = User.objects.get_or_create(username='cuid:'+user_id)
 
     # max_points may not be passed if question is ungraded, in which case it is set to 0
     # have also seen instance where non-number string was passed

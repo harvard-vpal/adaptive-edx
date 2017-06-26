@@ -5,6 +5,8 @@
 
 <link rel="stylesheet" href="{% static 'module/css/module.css' %}"/>
 <script src="{% static 'module/js/module.js' %}"></script>
+<script src="{% static 'module/js/lti_user_id.js' %}"></script>
+
 {% endblock head %}
 
 
@@ -93,7 +95,7 @@ src="
   </div>
 </div>
 
+{# make lti user id available to javascript #}
+<div id="lti-user-id" data-lti_user_id="{{ user_module.ltiparameters.user_id }}"></div>
 
 {% endblock body %}
-
-
