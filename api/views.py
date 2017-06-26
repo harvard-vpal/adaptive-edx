@@ -28,7 +28,7 @@ def problem_attempt(request):
 
     # get or create the user by the edx username
     user_id = request.POST.get('user')
-    if not username:
+    if not user_id:
         return JsonResponse({
             'success':False,
             'message': 'username not given',
